@@ -18,8 +18,8 @@ target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
-*.aws-sam/build/Function/hu/
-*.aws-sam/build/Function/lib/
+**/.aws-sam/build/Function/hu/**
+**/.aws-sam/build/Function/lib/**
 events/
 ### STS ###
 .apt_generated
