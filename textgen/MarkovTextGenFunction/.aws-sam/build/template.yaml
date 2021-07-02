@@ -1,0 +1,9 @@
+Resources:
+  Function:
+    Type: AWS::Serverless::Function
+    Properties:
+      Timeout: 254
+      MemorySize: 640
+      Handler: hu.listopad.textgen.TextGenApp
+      CodeUri: Function
+      Runtime: java11
