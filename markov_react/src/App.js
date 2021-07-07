@@ -26,7 +26,7 @@ function RenderText({isLoading, text, errMess, fetchText})  {
         return (
             <div className="container">
                 <div className="row">
-                    <div className="col-10">
+                    <div className="col-12">
                         <Spinner color="dark">
                             <span className="sr-only">Loading...</span>
                         </Spinner>
