@@ -2,7 +2,7 @@ import {Component} from "react/cjs/react.production.min";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import React from 'react';
-import {Jumbotron, Spinner, Button, ButtonGroup} from "reactstrap";
+import {Jumbotron, Spinner, Button} from "reactstrap";
 import { connect } from 'react-redux';
 import { fetchText } from "./redux/ActionCreators";
 import { FaTwitterSquare, FaRedo } from "react-icons/fa"
