@@ -55,6 +55,7 @@ public class TextGenApp implements RequestHandler<APIGatewayProxyRequestEvent, A
 		response.setIsBase64Encoded(false);
 		HashMap<String, String> headers = new HashMap<String, String>();
 		headers.put("Content-Type", "application/json");
+		headers.put("Access-Control-Allow-Origin", "*");
 		response.setHeaders(headers);
 
 		try {
@@ -133,7 +134,7 @@ public class TextGenApp implements RequestHandler<APIGatewayProxyRequestEvent, A
 
 		List<String> startList= new ArrayList<>();
 		for (String str : characterMap.keySet()){
-			if (str.toLowerCase().matches("[a-z]{3}")){
+			if (str.toLowerCase().matches("[a-z]{3}") && ! str.toLowerCase().matches("([a-z])\1?")){
 				startList.add(str);
 			}
 			if (startList.size() > 49){
